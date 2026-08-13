@@ -1,6 +1,9 @@
 package com.receitas.backend.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -14,12 +17,16 @@ public class Receita {
     private Long id;
 
     @Column(nullable = false, length = 100)
+    @NotBlank(message = "A descricao e obrigatoria")
     private String descricao;
 
     @Column(nullable = false, precision = 10, scale = 2)
+    @NotNull(message = "O valor e obrigatorio")
+    @DecimalMin(value = "0.01", message = "O valor deve ser maior que zero")
     private BigDecimal valor;
 
     @Column(nullable = false)
+    @NotNull(message = "A data e obrigatoria")
     private LocalDate data;
 
     public Receita() {

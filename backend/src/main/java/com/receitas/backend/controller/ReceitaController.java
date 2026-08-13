@@ -2,6 +2,7 @@ package com.receitas.backend.controller;
 
 import com.receitas.backend.model.Receita;
 import com.receitas.backend.repository.ReceitaRepository;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -40,14 +41,14 @@ public class ReceitaController {
     }
 
     @PostMapping
-    public ResponseEntity<Receita> criar(@RequestBody Receita receita) {
+    public ResponseEntity<Receita> criar(@Valid @RequestBody Receita receita) {
         Receita receitaSalva = receitaRepository.save(receita);
         return ResponseEntity.created(URI.create("/api/receitas/" + receitaSalva.getId()))
                 .body(receitaSalva);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Receita> atualizar(@PathVariable Long id, @RequestBody Receita receita) {
+    public ResponseEntity<Receita> atualizar(@PathVariable Long id, @Valid @RequestBody Receita receita) {
         return receitaRepository.findById(id)
                 .map(receitaExistente -> {
                     receitaExistente.setDescricao(receita.getDescricao());
