@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Receitas Financeiras</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="app-shell">
-    <header>
-      <p class="eyebrow">Controle financeiro</p>
-      <h1>Receitas</h1>
-      <p class="subtitle">Registre e acompanhe suas entradas financeiras.</p>
-    </header>
-
-    <section class="summary" aria-label="Resumo de receitas">
-      <span>Total registrado</span>
-      <strong id="total-receitas">R$ 0,00</strong>
-    </section>
-
-    <section class="form-section" aria-labelledby="nova-receita">
-      <h2 id="nova-receita">Nova receita</h2>
-      <form id="receita-form">
-        <label>
-          Descricao
-          <input id="descricao" name="descricao" maxlength="100" required placeholder="Ex.: Salario">
-        </label>
-        <label>
-          Valor
-          <input id="valor" name="valor" type="number" min="0.01" step="0.01" required placeholder="0,00">
-        </label>
-        <label>
-          Data
-          <input id="data" name="data" type="date" required>
-        </label>
-        <button type="submit">Adicionar receita</button>
-      </form>
-      <p id="mensagem" role="status"></p>
-    </section>
-
-    <section class="list-section" aria-labelledby="lista-receitas">
-      <div class="section-heading">
-        <h2 id="lista-receitas">Lancamentos</h2>
-        <button id="atualizar" class="icon-button" type="button" title="Atualizar lista" aria-label="Atualizar lista">&#8635;</button>
-      </div>
-      <div id="lista" class="lista" aria-live="polite"></div>
-    </section>
-  </main>
-  <script src="app.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend-react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
