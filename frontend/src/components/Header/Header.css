@@ -1,0 +1,70 @@
+.header{
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #dcdcdc;
+}
+
+/* ---------- Logo ---------- */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+
+    background:#0f6b55;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+    font-size:22px;
+}
+
+.titulo{
+    font-size:20px;
+    font-weight:700;
+    color:#0d1b2a;
+}
+
+.titulo span{
+    color:#0f6b55;
+}
+
+/* ---------- Lado direito ---------- */
+
+.usuario{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#5b6675;
+
+    font-size:15px;
+}
+
+.status{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#65b96f;
+}
