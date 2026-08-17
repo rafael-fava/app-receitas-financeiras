@@ -1,70 +1,97 @@
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
 .header{
+    width:100%;
+    border-bottom:1px solid #e8e8e8;
+    background:#ffffff;
+}
+
+.header-container{
+
+    max-width:1280px;
+
     height:90px;
+
+    margin:0 auto;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:0 40px;
+    padding:0 20px;
 
-    background:#ffffff;
-
-    border-bottom:1px solid #dcdcdc;
 }
 
-/* ---------- Logo ---------- */
+.header-left{
 
-.logo-area{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:14px;
+
 }
 
-.logo{
+.header-logo{
+
     width:36px;
     height:36px;
 
     border-radius:50%;
 
-    background:#0f6b55;
-
-    color:white;
+    background:#0F6B55;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    font-weight:bold;
-    font-size:22px;
-}
+    color:white;
 
-.titulo{
-    font-size:20px;
     font-weight:700;
-    color:#0d1b2a;
+
+    font-size:18px;
+
 }
 
-.titulo span{
-    color:#0f6b55;
+.header-title{
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#1D1D1D;
+
 }
 
-/* ---------- Lado direito ---------- */
+.header-title span{
 
-.usuario{
+    color:#0F6B55;
+
+}
+
+.header-right{
+
     display:flex;
     align-items:center;
+
     gap:10px;
 
-    color:#5b6675;
-
-    font-size:15px;
 }
 
-.status{
-    width:10px;
-    height:10px;
+.header-status{
+
+    width:9px;
+    height:9px;
 
     border-radius:50%;
 
-    background:#65b96f;
+    background:#66BE6F;
+
+}
+
+.header-text{
+
+    font-size:15px;
+
+    color:#5A6473;
+
 }

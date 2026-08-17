@@ -1,0 +1,125 @@
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+
+    width:100%;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.hero-container{
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:70px 20px 80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+}
+
+.hero-left{
+
+    max-width:700px;
+
+}
+
+.hero-subtitle{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    color:#0F6B55;
+
+    margin-bottom:28px;
+
+}
+
+.hero-title{
+
+    font-size:78px;
+
+    font-weight:600;
+
+    line-height:82px;
+
+    color:#18211E;
+
+    margin-bottom:30px;
+
+}
+
+.hero-title span{
+
+    display:block;
+
+    color:#0F6B55;
+
+    font-style:italic;
+
+    font-weight:500;
+
+}
+
+.hero-description{
+
+    width:470px;
+
+    font-size:20px;
+
+    color:#626B78;
+
+    line-height:34px;
+
+}
+
+.hero-right{
+
+    width:180px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.hero-line{
+
+    width:170px;
+    height:2px;
+
+    background:#18211E;
+
+    margin-bottom:18px;
+
+}
+
+.hero-today{
+
+    font-size:17px;
+
+    color:#626B78;
+
+    margin-bottom:10px;
+
+}
+
+.hero-date{
+
+    font-size:22px;
+
+    color:#18211E;
+
+    font-weight:700;
+
+}

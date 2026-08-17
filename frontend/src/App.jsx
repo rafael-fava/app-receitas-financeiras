@@ -1,15 +1,8 @@
-import './App.css'
-
-import Header from "./components/Header/Header";
-import CadastroReceita from "./pages/CadastroReceita";
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <CadastroReceita />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
