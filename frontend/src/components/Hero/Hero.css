@@ -1,125 +1,141 @@
-/* ========================= */
-/* HERO */
-/* ========================= */
+.hero {
 
-.hero{
+    width: 100%;
 
-    width:100%;
-
-    border-bottom:1px solid #ECECEC;
+    border-bottom: 1px solid #E7E3DA;
 
 }
 
-.hero-container{
+.hero-container {
 
-    max-width:1280px;
+    display: flex;
 
-    margin:0 auto;
+    justify-content: space-between;
 
-    padding:70px 20px 80px;
+    align-items: flex-end;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
+    padding: 34px 22px 34px;
 
 }
 
-.hero-left{
+.hero-left {
 
-    max-width:700px;
-
-}
-
-.hero-subtitle{
-
-    font-size:12px;
-
-    font-weight:600;
-
-    letter-spacing:3px;
-
-    color:#0F6B55;
-
-    margin-bottom:28px;
+    width: 610px;
 
 }
 
-.hero-title{
+.hero-subtitle {
 
-    font-size:78px;
+    font-family: "DM Mono", monospace;
 
-    font-weight:600;
+    font-size: 11px;
 
-    line-height:82px;
+    font-weight: 500;
 
-    color:#18211E;
+    letter-spacing: 4px;
 
-    margin-bottom:30px;
+    color: #2A7759;
 
-}
+    margin-bottom: 18px;
 
-.hero-title span{
-
-    display:block;
-
-    color:#0F6B55;
-
-    font-style:italic;
-
-    font-weight:500;
+    text-align: left;
 
 }
 
-.hero-description{
+.hero-title {
 
-    width:470px;
+    font-family: "Playfair Display", serif;
 
-    font-size:20px;
+    font-size: 62px;
 
-    color:#626B78;
+    font-weight: 600;
 
-    line-height:34px;
+    line-height: .92;
 
-}
+    color: #1D2822;
 
-.hero-right{
+    margin-bottom: 22px;
 
-    width:180px;
-
-    display:flex;
-    flex-direction:column;
-
-    align-items:flex-start;
+    text-align: left;
 
 }
 
-.hero-line{
+.hero-title span {
 
-    width:170px;
-    height:2px;
+    display: block;
 
-    background:#18211E;
+    color: #2A7759;
 
-    margin-bottom:18px;
+    font-style: italic;
 
-}
-
-.hero-today{
-
-    font-size:17px;
-
-    color:#626B78;
-
-    margin-bottom:10px;
+    font-weight: 500;
 
 }
 
-.hero-date{
+.hero-description {
 
-    font-size:22px;
+    width: 365px;
 
-    color:#18211E;
+    font-family: "Manrope", sans-serif;
 
-    font-weight:700;
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #68716D;
+
+    text-align: left;
+
+}
+
+.hero-right {
+
+    width: 155px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-end;
+
+    margin-bottom: 12px;
+
+}
+
+.hero-line {
+
+    width: 145px;
+
+    height: 2px;
+
+    background: #27322C;
+
+    margin-bottom: 16px;
+
+}
+
+.hero-today {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    color: #68716D;
+
+    margin-bottom: 6px;
+
+}
+
+.hero-date {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #1D2822;
 
 }

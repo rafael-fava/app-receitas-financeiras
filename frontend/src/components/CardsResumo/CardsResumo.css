@@ -1,0 +1,90 @@
+.cards-resumo {
+
+    display: grid;
+
+    grid-template-columns: 46% 27% 27%;
+
+    margin-top: 10px;
+
+    margin-bottom: 36px;
+
+}
+
+.card-total,
+.card-default {
+
+    height: 96px;
+
+    padding: 14px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.card-total {
+
+    background: #2A7759;
+
+    color: #FFFFFF;
+
+}
+
+.card-default {
+
+    background: #FFFFFF;
+
+    border-top: 1px solid #E7E3DA;
+
+    border-right: 1px solid #E7E3DA;
+
+    border-bottom: 1px solid #E7E3DA;
+
+}
+
+.card-default:last-child {
+
+    border-left: 1px solid #E7E3DA;
+
+}
+
+.card-title {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: inherit;
+
+}
+
+.card-value {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    color: inherit;
+
+}
+
+.card-description {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    color: inherit;
+
+    opacity: .85;
+
+}

@@ -14,7 +14,6 @@ export default function Hero() {
 
           <h1 className="hero-title">
             Suas receitas,
-
             <span>em movimento.</span>
           </h1>
 

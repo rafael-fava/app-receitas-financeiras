@@ -1,35 +1,39 @@
 import "./Header.css";
 
 export default function Header() {
-  return (
-    <header className="header">
 
-      <div className="header-container">
+    return (
 
-        <div className="header-left">
+        <header className="header">
 
-          <div className="header-logo">
-            R
-          </div>
+            <div className="header-container">
 
-          <h2 className="header-title">
-            receita<span>+</span>
-          </h2>
+                <div className="header-left">
 
-        </div>
+                    <div className="header-logo">
+                        R
+                    </div>
 
-        <div className="header-right">
+                    <h2 className="header-title">
+                        receita<span>+</span>
+                    </h2>
 
-          <span className="header-status"></span>
+                </div>
 
-          <p className="header-text">
-            Dados financeiros
-          </p>
+                <div className="header-right">
 
-        </div>
+                    <span className="header-status"></span>
 
-      </div>
+                    <span className="header-text">
+                        Dados financeiros
+                    </span>
 
-    </header>
-  );
+                </div>
+
+            </div>
+
+        </header>
+
+    );
+
 }
