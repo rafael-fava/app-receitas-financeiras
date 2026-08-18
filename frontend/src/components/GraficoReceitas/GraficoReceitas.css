@@ -1,0 +1,209 @@
+.grafico{
+
+    height:100%;
+
+    background:#FFFEFA;
+
+    border:1px solid #DCDDD8;
+
+    padding:34px 40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ================= TOPO ================= */
+
+.grafico-topo{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    margin-bottom:35px;
+
+}
+
+.grafico-subtitulo{
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    color:#1F7757;
+
+    margin-bottom:14px;
+
+
+
+}
+
+.grafico-titulo{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#17211D;
+
+
+}
+
+.grafico-legenda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    color:#6B7280;
+
+}
+
+.grafico-bolinha{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#1F7757;
+
+}
+
+/* ================= ÁREA DO GRÁFICO ================= */
+
+.grafico-area{
+
+    position:relative;
+
+    height:300px;
+
+}
+
+/* ================= LINHAS ================= */
+
+.linha{
+
+    position:absolute;
+
+    left:70px;
+    right:0;
+
+    border-top:1px solid #ECECEC;
+
+}
+
+.linha span{
+
+    position:absolute;
+
+    left:-70px;
+
+    top:-10px;
+
+    width:90px;
+
+    white-space:nowrap;
+
+    text-align:left;
+
+    background:#FFFEFA;
+
+    font-size:13px;
+
+    color:#7C8694;
+
+}
+
+.linha-topo{
+
+    top:0;
+
+}
+
+.linha-meio{
+
+    top:105px;
+
+}
+
+.linha-base{
+
+    top:210px;
+
+}
+
+/* ================= BARRAS ================= */
+
+.grafico-barras{
+
+    position:absolute;
+
+    left:90px;
+    
+    right:20px;
+
+    top:0;
+
+    height:210px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+}
+
+.barra{
+
+    width:62px;
+
+    background:#1F7757;
+
+    border-radius:2px 2px 0 0;
+
+    transition:.25s;
+
+}
+
+.barra:hover{
+
+    opacity:.85;
+
+}
+
+/* ================= MESES ================= */
+
+.grafico-meses{
+
+    position:absolute;
+
+    left:90px;
+    right:20px;
+
+    top:225px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.grafico-meses span{
+
+    width:62px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#667085;
+
+}
