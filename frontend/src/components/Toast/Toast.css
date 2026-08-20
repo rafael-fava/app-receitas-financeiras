@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
 .toast{
 
     position:fixed;
@@ -28,9 +30,12 @@
 
     animation:toastEntrada .25s ease;
 
+
 }
 
 .toast.sucesso{
+
+    font-family: 'Manrope';
 
     background:#DDF5E2;
 

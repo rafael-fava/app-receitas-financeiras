@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./ConsultaReceita.css";
 import Toast from "../Toast/Toast";
 
-export default function ConsultaReceita() {
+export default function ConsultaReceita({ editarReceita }) {
   const [id, setId] = useState("");
   const [receita, setReceita] = useState(null);
 
@@ -100,7 +100,7 @@ export default function ConsultaReceita() {
 
           <button
             className="btn-editar"
-            onClick={() => console.log("Editar")}
+            onClick={() => editarReceita(receita)}
           >
             Editar esta receita
           </button>
