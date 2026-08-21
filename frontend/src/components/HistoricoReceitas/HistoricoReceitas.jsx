@@ -6,6 +6,7 @@ export default function HistoricoReceitas({
     editarReceita,
     atualizar,
     atualizarLeituraRapida,
+    atualizarGrafico,
 }) {
 
     const [receitas, setReceitas] = useState([]);
@@ -212,6 +213,14 @@ export default function HistoricoReceitas({
                 "Receita excluída com sucesso!",
                 "sucesso"
             );
+
+
+            console.log(
+                "📊 Histórico: avisando o gráfico para atualizar..."
+            );
+            
+            atualizarGrafico();
+
         } catch (error) {
 
             console.error(

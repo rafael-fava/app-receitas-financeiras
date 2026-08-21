@@ -13,16 +13,57 @@ export default function CadastroReceita({
 
     const [maiorReceita, setMaiorReceita] = useState(null);
 
+    //Função para data
+    
+
     useEffect(() => {
+
+        const hoje = new Date();
+
+        const dataAtual =
+            `${hoje.getFullYear()}-${String(
+                hoje.getMonth() + 1
+            ).padStart(2, "0")}-${String(
+                hoje.getDate()
+            ).padStart(2, "0")}`;
+
+        console.log(
+            "📅 Data atual definida:",
+            dataAtual
+        );
+
         if (receitaEditando) {
-            setDescricao(receitaEditando.descricao || "");
-            setValor(receitaEditando.valor ?? "");
-            setData(receitaEditando.data || "");
+
+            console.log(
+                "✏️ Editando receita:",
+                receitaEditando.id
+            );
+
+            setDescricao(
+                receitaEditando.descricao || ""
+            );
+
+            setValor(
+                receitaEditando.valor ?? ""
+            );
+
+            // Na edição, usa a data de hoje
+            setData(dataAtual);
+
         } else {
+
+            console.log(
+                "➕ Novo cadastro: usando data atual"
+            );
+
             setDescricao("");
+
             setValor("");
-            setData("");
+
+            setData(dataAtual);
+
         }
+
     }, [receitaEditando]);
 
     async function buscarMaiorReceita() {
@@ -59,9 +100,9 @@ export default function CadastroReceita({
         console.log(
             "🔄 Section 4: verificando se os dados foram atualizados..."
         );
-    
+
         buscarMaiorReceita();
-    
+
     }, [atualizar]);
 
     async function salvarReceita(e) {

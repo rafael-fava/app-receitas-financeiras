@@ -147,8 +147,12 @@ export default function Home() {
                 valorAtual => valorAtual + 1
               );
             }}
+            atualizarGrafico={() => {
+              setAtualizarGrafico(
+                valorAtual => valorAtual + 1
+              );
+            }}
           />
-
         </section>
 
       </div>
