@@ -8,8 +8,13 @@ import GraficoReceitas from "../components/GraficoReceitas/GraficoReceitas";
 import ConsultaReceita from "../components/ConsultaReceita/ConsultaReceita";
 import CadastroReceita from "../components/CadastroReceita/CadastroReceita";
 import Toast from "../components/Toast/Toast";
+import HistoricoReceitas from "../components/HistoricoReceitas/HistoricoReceitas";
 
 export default function Home() {
+  const [atualizarHistorico, setAtualizarHistorico] = useState(0);
+  const [atualizarGrafico, setAtualizarGrafico] = useState(0);
+  const [atualizarLeituraRapida, setAtualizarLeituraRapida] = useState(0);
+  const [atualizarDados, setAtualizarDados] = useState(0);
   const [receitaEditando, setReceitaEditando] = useState(null);
 
   const [mensagem, setMensagem] = useState("");
@@ -33,7 +38,9 @@ export default function Home() {
   }
 
   function aoSalvar(dataResposta, receitaEditando, erro = false) {
+
     if (erro) {
+
       mostrarMensagem(
         receitaEditando
           ? "Erro ao atualizar receita."
@@ -42,7 +49,35 @@ export default function Home() {
       );
 
       return;
+
     }
+
+    console.log(
+      "💾 Receita salva com sucesso:",
+      dataResposta
+    );
+
+    console.log(
+      "🔄 Solicitando atualização do gráfico..."
+    );
+
+    /*
+     * Muda o valor do estado.
+     *
+     * O GraficoReceitas está observando esse valor.
+     * Quando ele mudar, o gráfico fará um novo GET.
+     */
+    setAtualizarGrafico(
+      valorAtual => valorAtual + 1
+    );
+
+    setAtualizarHistorico(
+      valorAtual => valorAtual + 1
+    );
+
+    setAtualizarLeituraRapida(
+      valorAtual => valorAtual + 1
+    );
 
     mostrarMensagem(
       receitaEditando
@@ -78,7 +113,9 @@ export default function Home() {
 
         <section className="section3">
 
-          <GraficoReceitas />
+          <GraficoReceitas
+            atualizar={atualizarGrafico}
+          />
 
           <ConsultaReceita
             editarReceita={editarReceita}
@@ -95,6 +132,21 @@ export default function Home() {
             receitaEditando={receitaEditando}
             cancelarEdicao={cancelarEdicao}
             aoSalvar={aoSalvar}
+            atualizar={atualizarLeituraRapida}
+          />
+
+        </section>
+
+        <section className="section5">
+
+          <HistoricoReceitas
+            editarReceita={editarReceita}
+            atualizar={atualizarHistorico}
+            atualizarLeituraRapida={() => {
+              setAtualizarLeituraRapida(
+                valorAtual => valorAtual + 1
+              );
+            }}
           />
 
         </section>

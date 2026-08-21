@@ -5,6 +5,7 @@ export default function CadastroReceita({
     receitaEditando,
     cancelarEdicao,
     aoSalvar,
+    atualizar,
 }) {
     const [descricao, setDescricao] = useState("");
     const [valor, setValor] = useState("");
@@ -54,8 +55,14 @@ export default function CadastroReceita({
     }
 
     useEffect(() => {
+
+        console.log(
+            "🔄 Section 4: verificando se os dados foram atualizados..."
+        );
+    
         buscarMaiorReceita();
-    }, []);
+    
+    }, [atualizar]);
 
     async function salvarReceita(e) {
         e.preventDefault();

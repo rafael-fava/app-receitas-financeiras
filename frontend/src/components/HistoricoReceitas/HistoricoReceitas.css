@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+
+
+/* ================= HISTÓRICO ================= */
+
+.historico {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: #FFFEFA;
+
+    border: 1px solid #DCDDD8;
+
+    padding: 28px 32px;
+
+    font-family: Manrope, sans-serif;
+
+}
+
+
+/* ================= TOPO ================= */
+
+.historico-topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 24px;
+
+}
+
+
+.historico-subtitulo {
+
+    margin: 0 0 10px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.72rem;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #1F7757;
+
+}
+
+
+.historico-titulo {
+
+    margin: 0;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #17211D;
+
+}
+
+
+/* ================= FILTRO ================= */
+
+.historico-acoes {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.historico-acoes input {
+
+    width: 220px;
+
+    height: 48px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #D4DAD6;
+
+    border-radius: 4px;
+
+    background: #FFFEFA;
+
+    padding: 0 14px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 14px;
+
+    color: #17211D;
+
+    outline: none;
+
+}
+
+
+.historico-acoes input::placeholder {
+
+    color: #667085;
+
+}
+
+
+.historico-acoes input:focus {
+
+    border-color: #1F7757;
+
+}
+
+
+.historico-acoes button {
+
+    height: 48px;
+
+    padding: 0 16px;
+
+    border: 1px solid #E0E4E1;
+
+    border-radius: 4px;
+
+    background: #FFFEFA;
+
+    color: #17211D;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.historico-acoes button:hover {
+
+    background: #F5F7F5;
+
+}
+
+
+/* ================= CABEÇALHO ================= */
+
+.historico-cabecalho {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1.2fr 1.2fr 1fr;
+
+    align-items: center;
+
+    padding: 0 14px 12px;
+
+    border-bottom: 1px solid #DCDDD8;
+
+}
+
+
+.historico-cabecalho span {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.68rem;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: #667085;
+
+}
+
+
+/* ================= ITEM ================= */
+
+.historico-item {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1.2fr 1.2fr 1fr;
+
+    align-items: center;
+
+    min-height: 82px;
+
+    padding: 0 14px;
+
+    border-bottom: 1px solid #E5E7E5;
+
+}
+
+
+.historico-descricao {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+.historico-descricao strong {
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #17211D;
+
+}
+
+
+.historico-descricao span {
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #7C8694;
+
+}
+
+
+.historico-data {
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #17211D;
+
+}
+
+
+.historico-valor {
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #1F7757;
+
+}
+
+
+/* ================= BOTÕES ================= */
+
+.historico-botoes {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+}
+
+
+.historico-botoes button {
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border-radius: 4px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.btn-historico-editar {
+
+    border: 1px solid #E0E4E1;
+
+    background: #FFFEFA;
+
+    color: #17211D;
+
+}
+
+
+.btn-historico-editar:hover {
+
+    background: #F5F7F5;
+
+}
+
+
+.btn-historico-excluir {
+
+    border: 1px solid #F0C9C5;
+
+    background: #FFFEFA;
+
+    color: #C4574E;
+
+}
+
+
+.btn-historico-excluir:hover {
+
+    background: #FDF0EF;
+
+}
+
+
+/* ================= MENSAGEM ================= */
+
+.historico-mensagem {
+
+    margin: 0;
+
+    padding: 30px 14px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 14px;
+
+    color: #667085;
+
+}
+
+
+/* ================================================= */
+/* CONFIRMAÇÃO DE EXCLUSÃO */
+/* ================================================= */
+
+.confirmacao-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(23, 33, 29, 0.38);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9998;
+
+}
+
+
+.confirmacao-card {
+
+    width: 420px;
+
+    max-width: calc(100vw - 40px);
+
+    box-sizing: border-box;
+
+    background: #FFFEFA;
+
+    border: 1px solid #DCDDD8;
+
+    border-radius: 4px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    font-family: Manrope, sans-serif;
+
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.16);
+
+}
+
+
+.confirmacao-icone {
+
+    width: 34px;
+
+    height: 34px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FCE8E8;
+
+    border: 1px solid #F0A4A4;
+
+    color: #C62828;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+
+.confirmacao-subtitulo {
+
+    margin: 0 0 9px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.7rem;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #C62828;
+
+}
+
+
+.confirmacao-titulo {
+
+    margin: 0 0 12px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #17211D;
+
+}
+
+
+.confirmacao-texto {
+
+    margin: 0 auto 25px;
+
+    max-width: 340px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #667085;
+
+}
+
+
+.confirmacao-texto strong {
+
+    color: #17211D;
+
+    font-weight: 700;
+
+}
+
+
+.confirmacao-botoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+
+.confirmacao-botoes button {
+
+    height: 46px;
+
+    padding: 0 18px;
+
+    border-radius: 4px;
+
+    font-family: Manrope, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.btn-confirmacao-cancelar {
+
+    border: 1px solid #DCDDD8;
+
+    background: #FFFEFA;
+
+    color: #17211D;
+
+}
+
+
+.btn-confirmacao-cancelar:hover {
+
+    background: #F5F7F5;
+
+}
+
+
+.btn-confirmacao-excluir {
+
+    border: 1px solid #C62828;
+
+    background: #C62828;
+
+    color: #FFFFFF;
+
+}
+
+
+.btn-confirmacao-excluir:hover {
+
+    background: #A91F1F;
+
+}
